@@ -10,7 +10,12 @@
       <!-- Marker -->
       <a-marker preset="custom" type="pattern" url="marker.patt">
         <!-- 3D Model -->
-        <a-box position="0 0.5 0" material="color: red;"></a-box>
+        <a-entity 
+  gltf-model="url(https://raw.github.com/FlorianT12/AR_Project/blob/main/Animation.glb)" 
+  animation-mixer="clip: *; loop: true; timeScale: 1" 
+  scale="1 1 1" 
+  position="0 0 0">
+</a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
